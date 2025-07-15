@@ -1,0 +1,43 @@
+pipeline {
+    agent any
+
+    environment {
+        TF_VAR_file = 'terraform.tfvars'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Terraform Init') {
+            steps {
+                sh 'terraform init'
+            }
+        }
+
+        stage('Terraform Plan') {
+            steps {
+                sh 'terraform plan -var-file=${TF_VAR_file}'
+            }
+        }
+
+        stage('Terraform Apply') {
+            when {
+                branch 'main'
+            }
+            steps {
+                input message: 'Approve to apply?'
+                sh 'terraform apply -auto-approve -var-file=${TF_VAR_file}'
+            }
+        }
+    }
+
+    post {
+        always {
+            cleanWs()
+        }
+    }
+}
