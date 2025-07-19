@@ -1,8 +1,3 @@
-provider "aws" {
-  region = var.aws_region
-}
-
-# Data sources for availability zones
 data "aws_availability_zones" "available" {
   state = "available"
 }
