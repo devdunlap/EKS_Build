@@ -14,9 +14,13 @@ provider "aws" {
   
   default_tags {
     tags = {
-      Environment = "dev"
+      Environment = "prod"
       Project     = "eks-terraform-pipeline"
       ManagedBy   = "terraform"
     }
   }
 }
+
+
+
+
