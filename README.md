@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EKS Terraform Pipeline
 
 This repository contains a complete Infrastructure as Code (IaC) solution for deploying Amazon EKS (Elastic Kubernetes Service) clusters using Terraform and Jenkins CI/CD pipeline.
@@ -111,3 +112,7 @@ Helper scripts in the `scripts/` directory provide:
 - **destroy.sh**: Clean up resources when needed
 
 This repository provides a production-ready foundation for deploying and managing EKS clusters with proper CI/CD practices
+=======
+add new read me
+
+>>>>>>> 6508361 ( updated read me)
