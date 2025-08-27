@@ -1,0 +1,58 @@
+# Core Jenkins Plugins
+workflow-aggregator:latest
+pipeline-stage-view:latest
+pipeline-build-step:latest
+pipeline-input-step:latest
+
+# SCM and Git Support
+git:latest
+github:latest
+github-branch-source:latest
+workflow-scm-step:latest
+
+# Build and Environment
+build-timeout:latest
+timestamper:latest
+ws-cleanup:latest
+credentials:latest
+credentials-binding:latest
+
+# AWS Integration
+aws-credentials:latest
+pipeline-aws:latest
+
+# Terraform Support
+terraform:latest
+
+# Docker Support (if using containerized builds)
+docker-workflow:latest
+docker-plugin:latest
+
+# UI and Visualization
+blueocean:latest
+pipeline-graph-analysis:latest
+pipeline-stage-tags-metadata:latest
+
+# Security and Authentication
+matrix-auth:latest
+pam-auth:latest
+
+# Notifications and Reporting
+email-ext:latest
+slack:latest
+junit:latest
+
+# Utility Plugins
+copyartifact:latest
+parameterized-trigger:latest
+build-user-vars-plugin:latest
+environment-injector:latest
+
+# Job Configuration
+job-dsl:latest
+configuration-as-code:latest
+
+# Additional Useful Plugins
+ansicolor:latest
+htmlpublisher:latest
+workflow-basic-steps:latest
